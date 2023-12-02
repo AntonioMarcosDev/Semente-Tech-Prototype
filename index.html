@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semente Tech - Agricultura Sustentável</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script defer src="index.js"></script>
+    <script defer src="dashboard.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Semente Tech</h1>
+        <p>Gerenciamento Inteligente para Agricultura Sustentável</p>
+    </header>
+
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <a href="#" onclick="showFunctionality('dashboard')" id="dashboard-link">Dashboard</a>
+        <a href="#" onclick="showFunctionality('water')" id="water-link">Consumo de Água</a>
+        <a href="#" onclick="showFunctionality('energy')" id="energy-link">Consumo de Energia</a>
+        <a href="#" onclick="showFunctionality('reports')" id="reports-link">Relatórios</a>
+    </nav>
+
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <p>Bem-vindo ao painel principal do Semente Tech. Aqui você pode visualizar informações essenciais sobre sua
+            produção agrícola.</p>
+        <section id="dashboard">
+            <div id="chartContainer" style="height: 300px; width: 80%; margin: 20px auto;"></div>
+        </section>
+    </section>
+
+    <section id="water" style="display: none;">
+        <h2>Consumo de Água</h2>
+        <p>Gerencie o consumo de água de forma eficiente, contribuindo para uma produção mais sustentável.</p>
+    </section>
+
+    <section id="energy" style="display: none;">
+        <h2>Consumo de Energia</h2>
+        <p>Otimize o uso de energia em suas operações agrícolas para reduzir custos e impactos ambientais.</p>
+    </section>
+
+    <section id="reports" style="display: none;">
+        <h2>Relatórios</h2>
+        <p>Acesse relatórios detalhados para analisar o desempenho da sua produção e tomar decisões informadas.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Semente Tech. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

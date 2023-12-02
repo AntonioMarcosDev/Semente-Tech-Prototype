@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #010423;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #5FCEBD;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background-color: #010423;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+nav a.selected {
+    background-color: #34455C;
+}
+
+@media screen and (max-width: 768px) {
+    nav a {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a.show {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        height: auto;
+    }
+}
